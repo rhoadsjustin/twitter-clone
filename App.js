@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 import { Provider, connect } from 'react-redux';
 import { Font, AppLoading } from 'expo';
-import store from './app/redux/store';
-import Router from './app/config/routes';
+import store from './redux/store';
+import Router from './config/routes';
 
 export default class App extends Component {
   constructor(){
@@ -17,7 +17,7 @@ export default class App extends Component {
     await Font.loadAsync({
       'Roboto': require('native-base/Fonts/Roboto.ttf'),
       'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
-      'Pacifico': require('./app/assets/fonts/Pacifico.ttf'),
+      'Pacifico': require('./assets/fonts/Pacifico.ttf'),
       'Ionicons': require('native-base/Fonts/Ionicons.ttf'),
     });
 
