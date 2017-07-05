@@ -18,7 +18,7 @@ export default () => (
       <View style={styles.iconBox}>
         <Icon
           style={styles.icon}
-          ios="ios-happy-outline"
+          ios="ios-pulse"
           android="md-happy"
         />
         <Text style={styles.welcome}>Welcome</Text>
